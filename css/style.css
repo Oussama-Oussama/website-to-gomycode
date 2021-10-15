@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;500;600&display=swap');
+* {
+margin: 0;
+    padding: 0;
+    font-family: 'Gemunu Libre', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#header
+{
+    width: 100%;
+    background-image: url(../res/banner.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.navigations {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index:999 ;
+    
+
+}
+
+#nav-logo {
+    width:auto ;
+    height: 80px;
+    margin-left: 20px;
+}
+
+.ul {
+    list-style: none;
+    margin-right:  250px; 
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.element {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.main-text {
+    position: static;
+    position: absolute;
+    left: 20%;
+    top: 320px;
+}
+
+.lmt {
+    color: blanchedalmond;
+    font-size: 2.4em;
+}
+.mmt {
+    color: white;
+    font-size: 2.8em;
+}
+
+.btn {
+    background-color: transparent;
+    color: white;
+    border: red solid 2px;
+    width: 200px;
+    height: 40px;
+    margin: 15px 0;
+}
+
+.btn:hover {
+    background-color: rgba(255, 0, 0, 0.39);
+
+
+}
+
+#products {
+    height: 180vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardes {
+background-color: blanchedalmond;
+width: 300px;
+height: 500px;
+border-radius: 20px;
+border: 2px brown solid;
+}
+
+.card-img {
+
+    background-image: url(../res/IMG_20201104_221551.jpg);
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.card-text {
+    color: black;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 20px;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(3, 300px);
+    }
+
+    #products {
+        height: 280vh;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    .ul {
+        margin-right:  150px;
+        width: 60%;
+    }
+    .grid {
+        grid-template-columns: repeat(2, 300px);
+    }
+
+    #products {
+        height: 350vh;
+    }
+    
+}
+
+@media screen and (max-width: 700px) and (min-width: 0px) {
+    .grid {
+        grid-template-columns: repeat(1, 300px);
+    }
+
+    #products {
+        height: 700vh;
+    }
+
+    .ul {
+        margin-right:  50px; 
+        width: 60%;
+    }
+    .main-text {
+        left: 20%;
+        top: 30%;
+        width: 50%;
+    }
+    
+    
+}
+
+
